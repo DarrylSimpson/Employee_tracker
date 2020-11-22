@@ -7,17 +7,25 @@ INSERT INTO department (name) VALUES ('Finance');
 
 INSERT INTO role (title, salary, department_id) 
 VALUES
-    ('Sales', 10000, 1),
-    ('Engineering', 20000, 2),
-    ('Legal', 30000, 3),
-    ('Finance', 40000, 4);
+    ('Sales Lead', 90000, 1),
+    ('Salesperson', 60000, 1),
+    ('Legal Team Lead', 150000, 2),
+    ('Lawyer', 120000, 2),
+    ('Accountant', 100000, 3),
+    ('Account Manager', 180000, 3),
+    ('Lead Engineer', 160000, 4),
+    ('Sofware Engineer', 120000, 4);
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
-    ('Frank', 'D', 1, NULL),
-    ('Frank', 'E', 2, 3),
-    ('Frank', 'F', 3, 1),
-    ('Frank', 'G', 4, 2);
+    ('Stanely', 'Hudson', 1, NULL),
+    ('Darryl', 'Filban', 2, 3),
+    ('Andy', 'Bernard', 3, 1),
+    ('Jim', 'Halpert', 4, 2),
+    ('Creed', 'Braton', 1, NULL),
+    ('Pam', 'Beasely', 2, 3),
+    ('Dwight', 'Schrute', 3, 1),
+    ('Michael', 'Scott', 4, 2);
 
 SELECT E1.first_name, E1.last_name, role.title, role.salary, department.name, E2.first_name AS manager
 FROM employee E1
