@@ -16,16 +16,17 @@ VALUES
     ('Lead Engineer', 160000, 4),
     ('Sofware Engineer', 120000, 4);
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES
-    ('Stanely', 'Hudson', 1, NULL),
-    ('Darryl', 'Filban', 2, 3),
-    ('Andy', 'Bernard', 3, 1),
-    ('Jim', 'Halpert', 4, 2),
-    ('Creed', 'Braton', 1, NULL),
-    ('Pam', 'Beasely', 2, 3),
-    ('Dwight', 'Schrute', 3, 1),
-    ('Michael', 'Scott', 4, 2);
+
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Stanely', 'Hudson', 1, NULL);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Darryl', 'Filban', 2, 1);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Andy', 'Bernard', 3, 1);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Jim', 'Halpert', 4, 2);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Creed', 'Braton', 5, NULL);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Pam', 'Beasely', 6, 3);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Dwight', 'Schrute', 7, 4);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Michael', 'Scott', 8, 2);
+
+
 
 SELECT E1.first_name, E1.last_name, role.title, role.salary, department.name, E2.first_name AS manager
 FROM employee E1
