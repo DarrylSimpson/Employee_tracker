@@ -1,13 +1,16 @@
 require('dotenv').config();
 const { prompt } = require("inquirer");
+const logo = require("asciiart-logo");
 const db = require("./db");
-//const { viewEmployees } = require('./db/queries.js');
 require("console.table");
 
 
 init();
 
 function init() {
+  const logoText = logo({ name: "Employee Manager" }).render();
+
+  console.log(logoText);
   
     loadMainPrompts();
 }
