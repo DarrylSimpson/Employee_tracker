@@ -63,7 +63,7 @@ SO THAT I can organize and plan my business
 ## Video Instructions
 * Click link for video
 
-[![Follow this link to the Walthrough video]](https://drive.google.com/file/d/1VFZ7yX3wN5hKhaB-f7oUckqoR4HG9Ftz/view?usp=sharing "video")
+[![Follow this link to the Walthrough video]](https://drive.google.com/file/d/1nLL1TGVWTWtJuDmmPLJOKhWhHs6Sqecj/view?usp=sharing "video")
 
 ## Pictures
 
